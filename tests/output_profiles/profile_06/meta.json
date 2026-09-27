@@ -1,0 +1,17 @@
+{
+  "id": "profile_06",
+  "name": "Fatima Zohra Alami",
+  "username": "fatima_zohra_alami66",
+  "city": "Fès (Ville Nouvelle)",
+  "tier": "low",
+  "ground_truth": {
+    "city": "Fès (Ville Nouvelle)",
+    "children_present": false,
+    "documents_exposed": false,
+    "exif_gps_present": false,
+    "expected_score_range": [
+      0,
+      25
+    ]
+  }
+}

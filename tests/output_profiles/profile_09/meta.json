@@ -1,0 +1,18 @@
+{
+  "id": "profile_09",
+  "name": "Hamza Slaoui",
+  "username": "hamza_slaoui66",
+  "city": "Marrakech (Guéliz)",
+  "tier": "medium",
+  "ground_truth": {
+    "workplace": "Attijariwafa Tower - CFC Casa Finance City",
+    "city": "Marrakech (Guéliz)",
+    "children_present": false,
+    "documents_exposed": false,
+    "exif_gps_present": false,
+    "expected_score_range": [
+      26,
+      50
+    ]
+  }
+}

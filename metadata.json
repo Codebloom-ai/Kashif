@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix kashif ",
+  "description": "Athar (أثر) protects users from social engineering through AI Scam Shield and Exposure Check.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

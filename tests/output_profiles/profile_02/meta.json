@@ -1,0 +1,18 @@
+{
+  "id": "profile_02",
+  "name": "Yasmine Berrada",
+  "username": "yasmine_berrada44",
+  "city": "Rabat (Agdal)",
+  "tier": "medium",
+  "ground_truth": {
+    "workplace": "OCP Innovation Center Benguerir",
+    "city": "Rabat (Agdal)",
+    "children_present": false,
+    "documents_exposed": false,
+    "exif_gps_present": false,
+    "expected_score_range": [
+      26,
+      50
+    ]
+  }
+}

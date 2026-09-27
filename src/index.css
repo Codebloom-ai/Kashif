@@ -1,0 +1,312 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #FAF8F5;
+    --ink-main: #161824;
+    --accent-violet: #7C3AED;
+    --accent-indigo: #6366F1;
+    --accent-sky: #0284C7;
+    --accent-lavender: #C4B5FD;
+    --safe-green: #16A34A;
+    --suspicious-amber: #D97706;
+    --threat-violet: #9333EA;
+    --card-surface: #FFFFFF;
+    --card-subtle: #FAF9FD;
+    --border-subtle: #E8E2EE;
+    --text-muted: #645D73;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--ink-main);
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [dir="rtl"] {
+    font-family: 'IBM Plex Sans Arabic', 'Manrope', sans-serif;
+  }
+}
+
+.font-serif-headline {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-arabic {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+/* Atmospheric subtle SVG noise grain overlay (2.5-3% opacity) */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.028;
+}
+
+/* Idle scan-line sweep animation */
+@keyframes scanSweep {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(350%);
+    opacity: 0;
+  }
+}
+
+/* Ambient Organic Blob Animations (18s, 24s, 30s independent loops) */
+@keyframes ambientBlobDrift1 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(22px, -18px) rotate(4deg) scale(1.03);
+  }
+  50% {
+    transform: translate(-16px, 20px) rotate(-3deg) scale(0.98);
+  }
+  75% {
+    transform: translate(18px, 14px) rotate(2deg) scale(1.02);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes ambientBlobDrift2 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(-22px, 18px) rotate(-5deg) scale(1.02);
+  }
+  66% {
+    transform: translate(20px, -16px) rotate(3deg) scale(0.97);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes ambientBlobDrift3 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+  30% {
+    transform: translate(18px, 22px) rotate(5deg) scale(0.98);
+  }
+  70% {
+    transform: translate(-20px, -16px) rotate(-4deg) scale(1.04);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+.animate-blob-1 {
+  animation: ambientBlobDrift1 18s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.animate-blob-2 {
+  animation: ambientBlobDrift2 24s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.animate-blob-3 {
+  animation: ambientBlobDrift3 30s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Backward compatibility drift classes */
+.animate-drift-1 {
+  animation: ambientBlobDrift1 18s ease-in-out infinite;
+}
+.animate-drift-2 {
+  animation: ambientBlobDrift2 24s ease-in-out infinite;
+}
+.animate-drift-3 {
+  animation: ambientBlobDrift3 30s ease-in-out infinite;
+}
+
+/* Gentle radar pulse for dropzone illustration */
+@keyframes mockPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes scanLineSubtle {
+  0% {
+    top: 5%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    top: 95%;
+    opacity: 0;
+  }
+}
+
+.animate-scan-sweep {
+  animation: scanSweep 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-mock-pulse {
+  animation: mockPulse 3.5s ease-in-out infinite;
+}
+
+.animate-scan-subtle {
+  animation: scanLineSubtle 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-blob-1,
+  .animate-blob-2,
+  .animate-blob-3,
+  .animate-drift-1,
+  .animate-drift-2,
+  .animate-drift-3,
+  .animate-scan-sweep,
+  .animate-mock-pulse,
+  .animate-scan-subtle {
+    animation: none !important;
+  }
+}
+
+/* Multi-layer soft shadows & tactile depth */
+.shadow-elevated {
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.07),
+              0 20px 40px -15px rgba(22, 24, 36, 0.04);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 16px 36px -8px rgba(124, 58, 237, 0.08),
+              0 24px 48px -12px rgba(22, 24, 36, 0.04);
+}
+
+.shadow-layered-deep {
+  box-shadow: 0 24px 48px -12px rgba(99, 102, 241, 0.10),
+              0 8px 24px -4px rgba(22, 24, 36, 0.05);
+}
+
+/* Layered card physical depth offset */
+.card-offset-shadow {
+  position: relative;
+}
+.card-offset-shadow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: #EDE8F7;
+  transform: translate(8px, 8px);
+  z-index: -1;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-offset-shadow:hover::before {
+  transform: translate(12px, 12px);
+}
+
+/* Custom underline offset */
+.accent-underline {
+  text-decoration: underline;
+  text-decoration-color: #7C3AED;
+  text-underline-offset: 4px;
+}
+
+/* Single-card carousel slide + fade animations */
+@keyframes tipSlideInNext {
+  0% {
+    opacity: 0;
+    transform: translate3d(28px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes tipSlideInPrev {
+  0% {
+    opacity: 0;
+    transform: translate3d(-28px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes tipSlideInNextRTL {
+  0% {
+    opacity: 0;
+    transform: translate3d(-28px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes tipSlideInPrevRTL {
+  0% {
+    opacity: 0;
+    transform: translate3d(28px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-tip-slide-next {
+  animation: tipSlideInNext 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-tip-slide-prev {
+  animation: tipSlideInPrev 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+[dir="rtl"] .animate-tip-slide-next {
+  animation: tipSlideInNextRTL 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+[dir="rtl"] .animate-tip-slide-prev {
+  animation: tipSlideInPrevRTL 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-tip-slide-next,
+  .animate-tip-slide-prev,
+  [dir="rtl"] .animate-tip-slide-next,
+  [dir="rtl"] .animate-tip-slide-prev {
+    animation: tipFadeOnly 0.2s ease-out forwards !important;
+  }
+  @keyframes tipFadeOnly {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+

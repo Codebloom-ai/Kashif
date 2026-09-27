@@ -1,0 +1,18 @@
+{
+  "id": "profile_05",
+  "name": "Omar Chraibi",
+  "username": "omar_chraibi53",
+  "city": "Agadir (Founty)",
+  "tier": "high",
+  "ground_truth": {
+    "workplace": "Alstom Transport Tanger Med",
+    "city": "Agadir (Founty)",
+    "children_present": true,
+    "documents_exposed": false,
+    "exif_gps_present": true,
+    "expected_score_range": [
+      51,
+      75
+    ]
+  }
+}

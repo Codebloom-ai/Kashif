@@ -1,0 +1,17 @@
+{
+  "id": "profile_08",
+  "name": "Zineb Benjelloun",
+  "username": "zineb_benjelloun92",
+  "city": "Rabat (Agdal)",
+  "tier": "low",
+  "ground_truth": {
+    "city": "Rabat (Agdal)",
+    "children_present": false,
+    "documents_exposed": false,
+    "exif_gps_present": false,
+    "expected_score_range": [
+      0,
+      25
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "profile_10",
+  "name": "Imane Kabbaj",
+  "username": "imane_kabbaj69",
+  "city": "Tanger (Malabata)",
+  "tier": "critical",
+  "ground_truth": {
+    "workplace": "Maroc Telecom Data Hub Rabat",
+    "city": "Tanger (Malabata)",
+    "children_present": true,
+    "documents_exposed": true,
+    "exif_gps_present": true,
+    "expected_score_range": [
+      76,
+      100
+    ]
+  }
+}

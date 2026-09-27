@@ -1,0 +1,162 @@
+[
+  {
+    "id": "held_01",
+    "text": "Barid Bank: Votre compte est temporairement bloqué suite à 3 tentatives erronées. Réactivez vos services en renseignant votre RIB et code secret: http://albarid-reactivation.co",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "fake_bank_otp",
+    "notes": "Banking phishing with urgency"
+  },
+  {
+    "id": "held_02",
+    "text": "Salam Ayoub, smhelya ta3talt 3lik, ghadi nkon 3ndek f l bureau m3a 15h inchaalah.",
+    "ground_truth": "safe",
+    "language": "darija-latin",
+    "category": "casual_chat",
+    "notes": "Friendly Moroccan Darija message about arriving at an office"
+  },
+  {
+    "id": "held_03",
+    "text": "السلام عليكم، لقد تم اختيار رقمكم للفوز بسيارة داسيا 2024 مهداة من شركة الاتصالات. يرجى إرسال صورة بطاقة التعريف الوطنية ورقم الحساب البنكي لتسليم الجائزة.",
+    "ground_truth": "scam",
+    "language": "ar-MA",
+    "category": "telecom_prize",
+    "notes": "Arabic car prize scam asking for CIN and RIB"
+  },
+  {
+    "id": "held_04",
+    "text": "Bonjour, votre facture Inwi du mois de septembre s'élève à 149 DH. Vous pouvez la régler sur l'application MyInwi ou en agence.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "carrier_billing",
+    "notes": "Legitimate carrier billing notice pointing to official app or physical branch"
+  },
+  {
+    "id": "held_05",
+    "text": "Your Netflix subscription has expired. Update your credit card details within 24 hours to prevent account cancellation: bit.ly/netflx-renew-49",
+    "ground_truth": "scam",
+    "language": "en",
+    "category": "account_blocked_phishing",
+    "notes": "Phishing subscription renewal via shortlink"
+  },
+  {
+    "id": "held_06",
+    "text": "عاجل: حالة إنسانية لطفل يحتاج عملية جراحية بالقلب غدا بالرباط. المرجو إرسال التبرعات فورا إلى الحساب البنكي الشخصي التالي قبل فوات الأوان.",
+    "ground_truth": "scam",
+    "language": "ar-MA",
+    "category": "fake_charity_sadaqah",
+    "notes": "Urgent emotional charity scam to personal account"
+  },
+  {
+    "id": "held_07",
+    "text": "Pouvez-vous me confirmer la réception des documents pour le dossier d'appel d'offres envoyé ce matin ?",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "business_email",
+    "notes": "Routine business confirmation"
+  },
+  {
+    "id": "held_08",
+    "text": "Appartement de standing à Guéliz Marrakech meublé 2500 DH/mois. Comme je suis à Paris pour affaires, versez 1000 DH de réservation par Wafacash pour bloquer la visite.",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "rental_deposit_scam",
+    "notes": "Rental deposit scam with absent landlord"
+  },
+  {
+    "id": "held_09",
+    "text": "Rendez-vous visa Espagne BLS garanti à Rabat sous 3 jours sans attente ! Envoyez 1500 DH d'avance par Cash Plus pour réserver votre créneau VIP.",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "fake_visa_agent",
+    "notes": "Black-market visa appointment scam"
+  },
+  {
+    "id": "held_10",
+    "text": "Code de sécurité temporaire Attijari Mobile: 710943. Valable 5 minutes. Ne le donnez à aucun conseiller.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "legit_otp",
+    "notes": "Authentic bank OTP SMS with security warning"
+  },
+  {
+    "id": "held_11",
+    "text": "ماما راني شريت ليك الدوا لي طلبتي وغادي نجيبو معايا فالعشية ملي نخرج من الخدمة.",
+    "ground_truth": "safe",
+    "language": "ar-MA",
+    "category": "family_chat",
+    "notes": "Warm familial conversation in Moroccan Arabic"
+  },
+  {
+    "id": "held_12",
+    "text": "NOTIFICATION ANAPEC: Offre de travail exceptionnelle en Allemagne. Envoyez 3000 DH pour l'équivalence de diplôme et visa de travail express.",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "fake_job_fee",
+    "notes": "Impersonation of ANAPEC with advance fees"
+  },
+  {
+    "id": "held_13",
+    "text": "Bonjour, votre colis n° CHR-9021 est en cours de livraison par notre chauffeur aujourd'hui entre 14h et 17h.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "delivery_status",
+    "notes": "Normal delivery timeframe notification with no link or payment"
+  },
+  {
+    "id": "held_14",
+    "text": "مبروك عليك تم قبول طلب السلفة الصغرى بقيمة 40000 درهم بدون فوائد، لتحويل المبلغ أرسل 500 درهم مصاريف المعالجة وصورة البطاقة الوطنية.",
+    "ground_truth": "scam",
+    "language": "ar-MA",
+    "category": "fake_job_fee",
+    "notes": "Bogus microloan requiring upfront processing fee and CIN"
+  },
+  {
+    "id": "held_15",
+    "text": "Hi Sara, just wanted to check if we are still meeting at 3 PM for the design system sync.",
+    "ground_truth": "safe",
+    "language": "en",
+    "category": "workplace_chat",
+    "notes": "Standard calendar sync check"
+  },
+  {
+    "id": "held_16",
+    "text": "URGENT DGI Maroc: Remboursement du trop-perçu d'impôt sur le revenu de 1420 DH. Réclamez votre virement avant minuit sur: bit.ly/dgi-rembours-ma",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "cnss_cnops_refund",
+    "notes": "Tax refund phishing with midnight deadline"
+  },
+  {
+    "id": "held_17",
+    "text": "Votre abonnement annuel à la salle de sport a été renouvelé avec succès. Votre facture est consultable à l'accueil.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "service_receipt",
+    "notes": "Benign local gym receipt notice"
+  },
+  {
+    "id": "held_18",
+    "text": "Khoya 3afak sifet lia l'adresse dial l'garage fin derti la vidange la derniere fois.",
+    "ground_truth": "safe",
+    "language": "darija-latin",
+    "category": "casual_recommendation",
+    "notes": "Darija asking for auto shop address"
+  },
+  {
+    "id": "held_19",
+    "text": "Aramex Express: Votre adresse de livraison comporte une erreur. Frais de réexpédition 12,50 DH requis pour reprogrammer: http://aramex-reexpedition.live",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "poste_amana_fee",
+    "notes": "Address error parcel reshipment fee phishing"
+  },
+  {
+    "id": "held_20",
+    "text": "Félicitations ! Vous avez été sélectionné pour tester des produits Amazon et gagner 300 DH par jour. Contactez notre manager WhatsApp: wa.me/212600000000",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "crypto_telegram_ponzi",
+    "notes": "Task-based fake review scam redirecting to WhatsApp manager"
+  }
+]

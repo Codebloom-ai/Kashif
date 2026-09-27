@@ -1,0 +1,18 @@
+{
+  "id": "profile_07",
+  "name": "Mehdi Idrissi",
+  "username": "mehdi_idrissi46",
+  "city": "Casablanca (Maârif)",
+  "tier": "critical",
+  "ground_truth": {
+    "workplace": "Technopark Casablanca / Fintech Lab",
+    "city": "Casablanca (Maârif)",
+    "children_present": true,
+    "documents_exposed": true,
+    "exif_gps_present": true,
+    "expected_score_range": [
+      76,
+      100
+    ]
+  }
+}

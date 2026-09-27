@@ -1,0 +1,18 @@
+{
+  "id": "profile_03",
+  "name": "Karim Tazi",
+  "username": "karim_tazi43",
+  "city": "Marrakech (Guéliz)",
+  "tier": "high",
+  "ground_truth": {
+    "workplace": "Attijariwafa Tower - CFC Casa Finance City",
+    "city": "Marrakech (Guéliz)",
+    "children_present": true,
+    "documents_exposed": false,
+    "exif_gps_present": true,
+    "expected_score_range": [
+      51,
+      75
+    ]
+  }
+}

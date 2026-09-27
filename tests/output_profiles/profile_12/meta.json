@@ -1,0 +1,18 @@
+{
+  "id": "profile_12",
+  "name": "Khadija Bouanani",
+  "username": "khadija_bouanani58",
+  "city": "Fès (Ville Nouvelle)",
+  "tier": "medium",
+  "ground_truth": {
+    "workplace": "Université Mohammed VI Polytechnique (UM6P)",
+    "city": "Fès (Ville Nouvelle)",
+    "children_present": false,
+    "documents_exposed": false,
+    "exif_gps_present": false,
+    "expected_score_range": [
+      26,
+      50
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "dev_01",
+    "text": "مبروك ربحتي 10000 درهم مع اتصالات المغرب. عطينا الكود باش نصيفطوها ليك فالحساب",
+    "ground_truth": "scam",
+    "language": "ar-MA",
+    "category": "telecom_prize",
+    "notes": "Classic prize hook + request for OTP/verification code"
+  },
+  {
+    "id": "dev_02",
+    "text": "Tu as gagné 1000dh lors du tirage annuel CIH, entre ton numéro de CIN et le code reçu par SMS pour valider: http://cih-secure-recompense.ma.top",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "fake_bank_otp",
+    "notes": "Prize + CIN + OTP code + phishing link"
+  },
+  {
+    "id": "dev_03",
+    "text": "Votre code de vérification est 483920. Ne le communiquez à personne.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "legit_otp",
+    "notes": "Standard benign 2FA SMS warning not to share"
+  },
+  {
+    "id": "dev_04",
+    "text": "Salut, t'es dispo demain pour le café à Maarif vers 17h ?",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "casual_chat",
+    "notes": "Normal social communication, no pressure or hook"
+  },
+  {
+    "id": "dev_05",
+    "text": "Votre colis Amana est bloqué pour cause de frais de douane impayés de 18 DH. Régularisez sur: http://amana-suivi-douane.me/pay",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "poste_amana_fee",
+    "notes": "Delivery fee hook + urgent shortened link"
+  },
+  {
+    "id": "dev_06",
+    "text": "rbe7ti m3ana voyage l turquie w 5000dh cadeau, sifet lina la carte nationale dialek w rechargi 100dh inwi",
+    "ground_truth": "scam",
+    "language": "darija-latin",
+    "category": "telecom_prize",
+    "notes": "Darija Latin: prize + CIN + prepaid recharge request"
+  },
+  {
+    "id": "dev_07",
+    "text": "Bonjour, suite à notre entretien, voici l'offre de stage au sein du département digital. Merci de nous renvoyer la convention signée.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "legit_recruitment",
+    "notes": "Legitimate job stage confirmation, no advance fees requested"
+  },
+  {
+    "id": "dev_08",
+    "text": "عفاك راني غلطت وصيفطت كود واتساب لرقمك فالميساج، رجعو ليا عاجل راني محتاجو دابا",
+    "ground_truth": "scam",
+    "language": "ar-MA",
+    "category": "whatsapp_hijack_code",
+    "notes": "Account takeover social engineering attempt"
+  },
+  {
+    "id": "dev_09",
+    "text": "CNOPS: Remboursement de votre dossier n° 48922 de 850 DH en attente. Entrez vos coordonnées bancaires pour recevoir le virement: bit.ly/cnops-remb-89",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "cnss_cnops_refund",
+    "notes": "Refund bait + bank card request via shortlink"
+  },
+  {
+    "id": "dev_10",
+    "text": "Salam khoya, wach l'article mzal dispo sur Avito ? Bghit nchrih b taman dialek.",
+    "ground_truth": "safe",
+    "language": "darija-latin",
+    "category": "marketplace_inquiry",
+    "notes": "Normal inquiry about Avito listing without strange payment links"
+  },
+  {
+    "id": "dev_11",
+    "text": "J'ai effectué le paiement de 450 DH sur Avito. Pour recevoir vos fonds sur votre carte, cliquez immédiatement: http://avito-fond-reception.xyz",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "avito_fake_buyer",
+    "notes": "Fake payment confirmation asking seller for card to 'receive' money"
+  },
+  {
+    "id": "dev_12",
+    "text": "Rejoignez le canal Telegram VIP Forex & Crypto: investissez 1000 DH et recevez 4500 DH sous 48h garanti sans aucun risque !",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "crypto_telegram_ponzi",
+    "notes": "Guaranteed impossible ROI + Telegram invite"
+  },
+  {
+    "id": "dev_13",
+    "text": "Rappel de votre rendez-vous chez Dr. Bensouda le jeudi 12 octobre à 10h30. En cas d'empêchement, veuillez contacter le cabinet.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "appointment_reminder",
+    "notes": "Routine healthcare appointment reminder without suspicious links"
+  },
+  {
+    "id": "dev_14",
+    "text": "بابا راني فالمستشفى بعد كسيدة خفيفة وماعنديش فلوس، عفاك صيفط ليا 1500 درهم ف كاش بلوس دابا بسرعة بهاد الاسم",
+    "ground_truth": "scam",
+    "language": "ar-MA",
+    "category": "relative_emergency",
+    "notes": "Family emergency impersonation demanding instant wire"
+  },
+  {
+    "id": "dev_15",
+    "text": "Contrat de travail à Dubaï avec logement et salaire de 18000 AED. Envoyez 2500 DH de frais de dossier et visite médicale pour validation.",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "fake_job_fee",
+    "notes": "High salary lure + upfront processing fee"
+  },
+  {
+    "id": "dev_16",
+    "text": "La réunion d'équipe de lundi est décalée à 14h en salle Magellan. Merci de préparer la synthèse du projet.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "internal_comms",
+    "notes": "Workplace operational communication"
+  },
+  {
+    "id": "dev_17",
+    "text": "URGENT BANQUE POPULAIRE: Une tentative de connexion suspecte a été détectée sur votre compte. Votre accès sera suspendu dans 2 heures. Confirmez votre identité: http://chaabi-net-alerte.cc",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "fake_bank_otp",
+    "notes": "High urgency + authority impersonation + credential harvesting"
+  },
+  {
+    "id": "dev_18",
+    "text": "Merci pour votre commande n° MA-8392. La livraison est prévue sous 48 heures ouvrables.",
+    "ground_truth": "safe",
+    "language": "fr",
+    "category": "order_confirmation",
+    "notes": "Legitimate transaction confirmation without payment request"
+  },
+  {
+    "id": "dev_19",
+    "text": "J'ai enregistré une vidéo intime de toi via ta webcam. Si tu ne m'envoies pas 2000 DH via Wafacash sous 24h, j'envoie la vidéo à toute ta liste d'amis Facebook.",
+    "ground_truth": "scam",
+    "language": "fr",
+    "category": "romance_sextortion",
+    "notes": "Explicit blackmail / sextortion demand"
+  },
+  {
+    "id": "dev_20",
+    "text": "Hey check out this cool project repository I shared with you on GitHub: https://github.com/torvalds/linux",
+    "ground_truth": "safe",
+    "language": "en",
+    "category": "legit_link",
+    "notes": "Safe benign link sharing to known legitimate service"
+  }
+]

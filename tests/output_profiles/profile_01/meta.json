@@ -1,0 +1,17 @@
+{
+  "id": "profile_01",
+  "name": "Amine El Fassi",
+  "username": "amine_el fassi94",
+  "city": "Casablanca (Maârif)",
+  "tier": "low",
+  "ground_truth": {
+    "city": "Casablanca (Maârif)",
+    "children_present": false,
+    "documents_exposed": false,
+    "exif_gps_present": false,
+    "expected_score_range": [
+      0,
+      25
+    ]
+  }
+}
